@@ -19,9 +19,9 @@ module.exports = {
       },
     },
     dialect: 'mysql',
-    host: process.env.DB_ENDPOINT,
+    host: process.env.ENV.DB_ENDPOINT,
     password: process.env.DB_PASSWORD,
-    username: process.env.DB_USERNAME,
+    username: process.env.env.username,
   },
   test: {
     database: 'auth',
